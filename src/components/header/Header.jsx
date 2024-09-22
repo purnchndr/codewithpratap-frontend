@@ -15,6 +15,7 @@ function Header() {
         <Logo />
 
         <div className={style.navlinks}>
+          <NavLink to='/'> Home </NavLink>
           {token && <NavLink to='/dashboard'> Dashboard </NavLink>}
           <NavLink to='/courses'> Courses </NavLink>
           <NavLink to='/tutorials'> Tutorial </NavLink>

@@ -69,9 +69,9 @@ function SecondSection() {
         </ul>
 
         <div>
-          <Link to='/callback-from'>
+          {/* <Link to='/callback-from'>
             <button>Get Callback</button>
-          </Link>
+          </Link> */}
           <Link to='/courses/mern2024'>
             <button>Enroll Now</button>
           </Link>
