@@ -5,12 +5,14 @@ import style from './Homepage.module.css';
 
 function Homepage() {
   return (
-    <div className={style.homepage}>
+    <>
       <Header />
-      <MainSection />
-      <SecondSection />
+      <div className={style.homepage}>
+        <MainSection />
+        <SecondSection />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
