@@ -4,7 +4,7 @@ import Homepage from './pages/homepage/Homepage';
 import RefundConditions from './pages/refundConditions/RefundConditions';
 import PrivacyPolicy from './pages/privacyPolicy/PrivacyPolicy';
 import TermsOfUse from './pages/termsOfUse/TermsOfUse';
-import Copyright from './pages/copyright/copyright';
+import Copyright from './pages/copyright/Copyright';
 import Error from './pages/error/Error';
 import Login from './pages/login/Login';
 import Register from './pages/register/Register';
