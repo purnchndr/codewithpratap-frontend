@@ -1,0 +1,34 @@
+.registerBox {
+  width: 100%;
+  background-color: var(--grey-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  box-sizing: border-box;
+}
+
+.register {
+  width: 500px;
+  text-align: center;
+  background-color: var(--black-color);
+  padding: 20px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textareaBox {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.textarea {
+  font-size: 22px;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-align: center;
+}

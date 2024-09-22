@@ -1,0 +1,35 @@
+.userBox {
+  background-color: var(--grey-color);
+  width: 100%;
+  padding: 20px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.user {
+  width: 60%;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 20px;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.user h1 {
+  color: var(--orange-color);
+}
+
+.user img {
+  width: 100px;
+}
+
+.address {
+  font-weight: 700;
+  margin: 5px 2px;
+}
+.logout {
+  margin: 30px 10px;
+}

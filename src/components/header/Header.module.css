@@ -1,0 +1,25 @@
+.header {
+  background-color: var(--black-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.profile p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.navlinks a {
+  padding: 2px 10px;
+  font-size: 18px;
+}

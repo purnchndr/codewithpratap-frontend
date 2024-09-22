@@ -1,0 +1,16 @@
+.privacy {
+  padding: 20px;
+}
+
+.privacy h1,
+h2 {
+  font-size: 20px;
+}
+
+ol > li {
+  font-weight: 700;
+}
+
+.privacy a {
+  color: var(--orange-color);
+}

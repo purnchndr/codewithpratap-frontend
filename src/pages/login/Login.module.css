@@ -1,0 +1,22 @@
+.loginBox {
+  width: 100%;
+  background-color: var(--grey-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.login {
+  width: 500px;
+  text-align: center;
+  background-color: var(--black-color);
+  padding: 20px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

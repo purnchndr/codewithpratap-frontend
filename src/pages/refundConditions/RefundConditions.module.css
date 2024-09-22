@@ -1,0 +1,16 @@
+.refunds {
+  padding: 20px;
+}
+
+.refunds h1,
+h2 {
+  font-size: 20px;
+}
+
+ol > li {
+  font-weight: 700;
+}
+
+.refunds a {
+  color: var(--orange-color);
+}
