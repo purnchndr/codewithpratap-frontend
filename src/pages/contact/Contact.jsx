@@ -44,7 +44,7 @@ function Contact() {
               <img width='30px' src='/img/pinterest.png' alt='pinterest' />
             </a>
           </div>
-          <p> &copy; 2024, All writes reserved</p>
+          <p> &copy; 2024, All Rights Reserved</p>
         </div>
       </div>
       <Footer />

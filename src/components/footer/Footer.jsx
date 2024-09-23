@@ -7,7 +7,7 @@ function Footer() {
     <footer>
       <div className={style.section1}>
         <Logo />
-        <p> &copy; 2024, All writes reserved</p>
+        <p> &copy; 2024, All Rights Reserved</p>
         <address>
           62B, Bodarwar, Kushinagar
           <br />
