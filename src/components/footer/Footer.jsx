@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
 import style from './Footer.module.css';
 
@@ -39,12 +39,12 @@ function Footer() {
       </div>
       <div className={style.section1}>
         <h2>Legal</h2>
-        <Link to='/terms-of-use'>Terms of use</Link>
-        <Link to='/privacy-policy'>Privacy Policy</Link>
-        <Link to='/copyright'>Copyright Policy</Link>
-        <Link to='/refund-and-cancellation-policy'>
+        <NavLink to='/terms-of-use'>Terms of use</NavLink>
+        <NavLink to='/privacy-policy'>Privacy Policy</NavLink>
+        <NavLink to='/copyright'>Copyright Policy</NavLink>
+        <NavLink to='/refund-and-cancellation-policy'>
           Refund & Cancellation Policy
-        </Link>
+        </NavLink>
       </div>
     </footer>
   );

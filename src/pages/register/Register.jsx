@@ -38,11 +38,11 @@ function Register() {
       if (password !== password2) return toast.error('Password did not match');
       if (!dob) return toast.error('Please enter Date of Birth');
 
-      setLoading(true);
+      setLoading('Creating User');
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'https://codewithpratap-backend-production.up.railway.app/api/user/register/',
+        url: `${window.BACKEND_URL}/api/user/register/`,
         headers: {},
         data: { name, mobile, email, address, dob, password },
       };
@@ -138,7 +138,7 @@ function Register() {
         </form>
       </div>
       <Footer />
-      {loading && <Loader />}
+      {loading && <Loader text={loading} />}
     </>
   );
 }

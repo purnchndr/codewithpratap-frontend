@@ -17,6 +17,8 @@ import Contact from './pages/contact/Contact';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import CourseDetails from './pages/courseDetails/CourseDetails';
+import { useEffect, useState } from 'react';
+import SplashScreen from './components/splashScreen/SplashScreen';
 
 const router = createBrowserRouter([
   {
@@ -92,8 +94,14 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  console.log(window.BACKEND_URL);
-  return <RouterProvider router={router} />;
+  const [splashScreen, setSplashScreen] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setSplashScreen(false), 2500);
+  }, []);
+
+  return (
+    <>{splashScreen ? <SplashScreen /> : <RouterProvider router={router} />}</>
+  );
 }
 
 export default App;

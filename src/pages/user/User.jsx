@@ -14,14 +14,14 @@ function User() {
   useEffect(() => {
     async function fetchUser() {
       try {
-        setLoading(true);
+        setLoading('Fetching User data');
         const token = localStorage.getItem('token');
         if (!token) return navigate('/login');
 
         let config = {
           method: 'get',
           maxBodyLength: Infinity,
-          url: 'https://codewithpratap-backend-production.up.railway.app/api/user/',
+          url: `${window.BACKEND_URL}/api/user/`,
           headers: { token },
           data: {},
         };
@@ -50,46 +50,44 @@ function User() {
       : 'You Have not purchased any courses yet!';
   return (
     <>
-      {loading && <Loader />}
+      <Header />
+      {loading && <Loader text={loading} />}
       {user && (
-        <>
-          <Header />
-          <div className={style.userBox}>
-            <div className={style.user}>
-              <img src={img} alt='profile logo' />
-              <h1> {user.name} </h1>
-              <div className={style.courses}>
-                <p>{courses}</p>
-              </div>
-              <div className={style.contact}>
-                <p>Mobile Number: {user.mobile}</p>
-                <p>Email: {user.email}</p>
-              </div>
-
-              <div className={style.contact}>
-                <p>Date of Birth: {dob}</p>
-                <p>Email: {user.email}</p>
-              </div>
-              <div className={style.address}>
-                <p>Address: </p>
-                <address className={style.address}>{user.address}</address>
-              </div>
-              <div className={style.logout}>
-                <button onClick={logout}>LogOut</button>
-              </div>
-              <span>
-                <i>
-                  *to update any details email us on{' '}
-                  <a href='mailto:codewithpratap@gmail.com'>
-                    codewithpratap@gmail.com
-                  </a>
-                </i>
-              </span>
+        <div className={style.userBox}>
+          <div className={style.user}>
+            <img src={img} alt='profile logo' />
+            <h1> {user.name} </h1>
+            <div className={style.courses}>
+              <p>{courses}</p>
             </div>
+            <div className={style.contact}>
+              <p>Mobile Number: {user.mobile}</p>
+              <p>Email: {user.email}</p>
+            </div>
+
+            <div className={style.contact}>
+              <p>Date of Birth: {dob}</p>
+              <p>Email: {user.email}</p>
+            </div>
+            <div className={style.address}>
+              <p>Address: </p>
+              <address className={style.address}>{user.address}</address>
+            </div>
+            <div className={style.logout}>
+              <button onClick={logout}>LogOut</button>
+            </div>
+            <span>
+              <i>
+                *to update any details email us on{' '}
+                <a href='mailto:codewithpratap@gmail.com'>
+                  codewithpratap@gmail.com
+                </a>
+              </i>
+            </span>
           </div>
-          <Footer />
-        </>
+        </div>
       )}
+      <Footer />
     </>
   );
 }
